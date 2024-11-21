@@ -14,8 +14,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -220,8 +226,6 @@
               <h2 class="display-4 font-weight-bold mb-4"></h2>
               <h2 class="fw-bold">Our Services</h2>
 
-
-
               <p>
                 We deliver cutting-edge solutions to monitor, secure, <br />and
                 optimize your applications, ensuring top performance and user
@@ -305,7 +309,6 @@
           <div class="col-md-12">
             <div class="section-header text-center pb-5">
               <h2 class="fw-bold">Our Team</h2>
-
             </div>
           </div>
         </div>
@@ -314,11 +317,11 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card border-0 shadow-lg">
               <img
-              id="male-image-1"
-              class="card-img-top rounded-circle mx-auto mt-4"
-              style="width: 150px; height: 150px; object-fit: cover"
-              alt="Dynamic Portrait"
-            />
+                id="male-image-1"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Dynamic Portrait"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Ahmed Harkaoui</h5>
                 <p class="card-text text-muted">Lead Developer</p>
@@ -329,11 +332,11 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card border-0 shadow-lg">
               <img
-            id="female-image"
-            class="card-img-top rounded-circle mx-auto mt-4"
-            style="width: 150px; height: 150px; object-fit: cover"
-            alt="Dynamic Portrait"
-          />
+                id="female-image"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Dynamic Portrait"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Assia Elkhyat</h5>
                 <p class="card-text text-muted">Project Manager</p>
@@ -344,11 +347,11 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card border-0 shadow-lg">
               <img
-              id="male-image-2"
-              class="card-img-top rounded-circle mx-auto mt-4"
-              style="width: 150px; height: 150px; object-fit: cover"
-              alt="Dynamic Portrait"
-            />
+                id="male-image-2"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Dynamic Portrait"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Haroune Saad</h5>
                 <p class="card-text text-muted">APM consultant</p>
@@ -436,9 +439,7 @@
     <!-- End Contact section ---->
 
     <!-- Begin Footer -->
-    <footer class="text-white py-4"
-    style="background-color: #2d3748"
-    >
+    <footer class="text-white py-4" style="background-color: #2d3748">
       <div class="container text-center">
         <p class="mb-3">© 2023 APMExpert. All rights reserved.</p>
         <div class="d-flex justify-content-center">
@@ -457,21 +458,24 @@
     <!-- End Footer -->
     <script>
       // Fetch random user images
-          // Fetch Male and Female Images in a single request (2 males and 1 female)
-  fetch('https://randomuser.me/api/?gender=male&results=2')
-    .then(response => response.json())
-    .then(data => {
-      // Set the male images
-      document.querySelector('#male-image-1').src = data.results[0].picture.large;
-      document.querySelector('#male-image-2').src = data.results[1].picture.large;
-    });
+      // Fetch Male and Female Images in a single request (2 males and 1 female)
+      fetch("https://randomuser.me/api/?gender=male&results=2")
+        .then((response) => response.json())
+        .then((data) => {
+          // Set the male images
+          document.querySelector("#male-image-1").src =
+            data.results[0].picture.large;
+          document.querySelector("#male-image-2").src =
+            data.results[1].picture.large;
+        });
 
-  // Fetch Female Image
-  fetch('https://randomuser.me/api/?gender=female')
-    .then(response => response.json())
-    .then(data => {
-      document.querySelector('#female-image').src = data.results[0].picture.large;
-    });
+      // Fetch Female Image
+      fetch("https://randomuser.me/api/?gender=female")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector("#female-image").src =
+            data.results[0].picture.large;
+        });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
